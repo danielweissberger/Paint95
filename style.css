@@ -61,7 +61,16 @@ body{
 }
 #canvas{
     background-color:white;
+    -webkit-transition: all 0.75s ease-in-out;
+    -moz-transition: all 0.75s ease-in-out;
+    -o-transition: all 0.75s ease-in-out;
+    transition: all 0.75s ease-in-out;
 }
+
+#canvasDiv{
+    display:inline-block;
+}
+
 #logoImg{
     height:70px;
     width:90px;
