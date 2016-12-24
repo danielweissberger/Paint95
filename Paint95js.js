@@ -133,14 +133,14 @@ toolBarDivMaker(brushOptionsContainer,toolbar2,50);
 
 
 function canvasLarger(){
-    canvasSize +=20;
-    canvas.style.height = canvasSize + "px";
-    canvas.style.width = canvasSize + "px";
+    canvas = document.getElementById("canvas");
+    canvas.style.height = (parseInt(canvas.style.height)+20)+"px";
+    canvas.style.width = (parseInt(canvas.style.width)+20) + "px";
 }
 function canvasSmaller(){
-    canvasSize -=20;
-    canvas.style.height= canvasSize + "px";
-    canvas.style.width = canvasSize + "px";
+    canvas = document.getElementById("canvas");
+    canvas.style.height= (parseInt(canvas.style.height)-20) + "px";
+    canvas.style.width = (parseInt(canvas.style.width)-20) + "px";
 }
 var cLarger = document.createElement("button");
 cLarger.textContent = "+";
