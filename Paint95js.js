@@ -53,6 +53,7 @@ function colorSelect(e){
     else {
         e.target.classList.remove("selected");
         e.target.classList.add("unselected");
+        selectedColor = "";
     }
 }
 
