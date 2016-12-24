@@ -65,19 +65,12 @@ function createColor(color){
     col.addEventListener("click",colorSelect)
     return col;
 }
-toolBarDivMaker(createColor("red"),toolbar1,45);
-toolBarDivMaker(createColor("blue"),toolbar1,45);
-toolBarDivMaker(createColor("yellow"),toolbar1,45);
-toolBarDivMaker(createColor("green"),toolbar1,45);
-toolBarDivMaker(createColor("magenta"),toolbar1,45);
-toolBarDivMaker(createColor("black"),toolbar1,45);
-toolBarDivMaker(createColor("orange"),toolbar1,45);
-toolBarDivMaker(createColor("pink"),toolbar1,45);
-toolBarDivMaker(createColor("brown"),toolbar1,45);
-toolBarDivMaker(createColor("teal"),toolbar1,45);
-toolBarDivMaker(createColor("aqua"),toolbar1,45);
-toolBarDivMaker(createColor("purple"),toolbar1,45);
-toolBarDivMaker(createColor("white"),toolbar1,45);
+
+var colors = ["red","blue","yellow","green","magenta","black","orange","pink","brown","teal","aqua","purple","white"]
+
+for(var i=0;i<colors.length;i++){
+    toolBarDivMaker(createColor(colors[i]),toolbar1,45);
+}
 
 
 
